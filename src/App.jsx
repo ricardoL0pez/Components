@@ -10,7 +10,6 @@ function App() {
     <NavBar/>
     </React.Fragment>
     
-      <h1>COMPONENTS</h1>
     </>
   )
 }
