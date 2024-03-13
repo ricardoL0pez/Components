@@ -4,19 +4,18 @@ header {
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    /* background-color: var(--mainColor); */
     background-color: black;
     color: var(--textColor);
 }
 
 nav a {
-    margin: 0 2 rem;
+    margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: var(--secondaryColor);
+    color: #DB2B39;
 }
 
 header .nav_btn {
@@ -31,6 +30,16 @@ header .nav_btn {
     font-size: 1.8rem;
 }
 
+/* header div,
+nav {
+	display: flex;
+	align-items: center;
+} */
+
+.icon{
+    color: #ffff;
+}
+
 @media only screen and (max-width: 1024px) {
     header .nav_btn {
         visibility: visible;
@@ -39,7 +48,7 @@ header .nav_btn {
 
     header nav {
         position: fixed;
-        top: 0;
+        top: -100vh;
         left: 0;
         height: 100%;
         width: 100%;
@@ -48,16 +57,16 @@ header .nav_btn {
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: var(--mainColor);
+        background-color: black;
         transition: 1s;
-        transform: translateY(-100vh);
+        transform: translateY(100vh);
     }
 
-    header .responsive_nav{
+     header .responsive_nav{
         transform: none;
-    }
+    } 
 
-    nav .nav_close_btn {
+    header .nav_close_btn {
         position: absolute;
         top: 2rem;
         right: 2rem;
