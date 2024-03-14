@@ -1,4 +1,4 @@
-header {
+/* header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,7 +7,12 @@ header {
     background-color: black;
     color: var(--textColor);
 }
-
+h3{
+    font-weight: lighter;
+}
+span{
+    font-weight: bold;
+}
 nav a {
     margin: 0 2rem;
     color: var(--textColor);
@@ -15,10 +20,13 @@ nav a {
 }
 
 nav a:hover {
-    color: #DB2B39;
+    color: #848484;
+}
+nav .login:hover {
+    font-weight: bold;
 }
 
-header .nav_btn {
+header .navBtn {
     padding: 5px;
     cursor: pointer;
     background: transparent;
@@ -30,23 +38,73 @@ header .nav_btn {
     font-size: 1.8rem;
 }
 
-/* header div,
-nav {
+
+ header div {
 	display: flex;
 	align-items: center;
-} */
+    justify-content: flex-end;
+}  
 
+nav{
+    display: flex;
+    align-items: center;
+
+}
 .icon{
     color: #ffff;
 }
 
+.logInBtn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.signInBtn{
+    width: 100px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.signInBtn:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+}
+.logInBtn:hover {
+    font-weight: bold;
+}
+
+
 @media only screen and (max-width: 1024px) {
-    header .nav_btn {
+    header .navBtn {
         visibility: visible;
         opacity: 1;
     }
 
-    header nav {
+    header .nav {
         position: fixed;
         top: -100vh;
         left: 0;
@@ -62,17 +120,162 @@ nav {
         transform: translateY(100vh);
     }
 
-     header .responsive_nav{
+     header .navResponsive{
         transform: none;
     } 
 
-    header .nav_close_btn {
+    header .navCloseBtn {
         position: absolute;
         top: 2rem;
         right: 2rem;
     }
 
-    nav a{
+    .nav a{
+        font-size: 1.5rem;
+    }
+}
+ */
+
+ header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: black;
+    color: var(--textColor);
+}
+h3{
+    font-weight: lighter;
+}
+span{
+    font-weight: bold;
+}
+a {
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+a:hover {
+    color: #848484;
+}
+
+
+
+ header div {
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+}  
+
+.faBars {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.faTimes{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.logInBtn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.signInBtn{
+    width: 100px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.signInBtn:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+}
+.logInBtn:hover {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .faBars {
+            padding: 5px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 1.8rem;
+            visibility: visible;
+    opacity: 1;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .navResponsive {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: black;
+        transition: 1s;
+        transform: translateY(100vh);
+    }
+    .faTimes {
+        padding: 5px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        visibility: visible;
+    opacity: 1;
+    }
+
+    a, .logInBtn {
         font-size: 1.5rem;
     }
 }
