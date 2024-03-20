@@ -13,12 +13,13 @@ h3{
 span{
     font-weight: bold;
 }
-a {
+.a {
     margin: 0 2rem;
-    color: var(--textColor);
+    /* color: var(--textColor); */
+    color: white;
     text-decoration: none;
 }
-a:hover {
+.a:hover {
     color: #848484;
 }
 

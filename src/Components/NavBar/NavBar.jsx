@@ -19,9 +19,9 @@ const NavBar = () => {
             <div>
                 <nav className={`${styles.nav} ${showMenu ? styles.navResponsive : ''}`}>
                 
-                    <a href="/#">Home</a>
-                    <a href="/#">Aboutme</a>
-                    <a href="/#">Contact</a>
+                    <a className={styles.a} href="/#">Home</a>
+                    <a className={styles.a} href="/#">About</a>
+                    <a className={styles.a} href="/#">Contact</a>
                     <button className={styles.logInBtn}>Log in</button>
                     <button className={styles.signInBtn}>Sign in</button>
 
